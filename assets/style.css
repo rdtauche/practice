@@ -226,3 +226,17 @@ aside {
     margin-top: 20px;
     font-size: 10px;
   }
+
+  /* ************#5 CSS - Data Attributes****************************** */
+  .img {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 1%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 1);
+    transition: 0.3s;
+  }
