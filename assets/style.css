@@ -42,11 +42,28 @@ img {
     align-content: center;
 }
 
+h1 {
+    text-align: center;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
 .box {
     height: 200px;
     width: 200px;
     background-color: pink;
     margin: 20px;
+}
+
+.bigbox {
+    height: 250px;
+    width: 400px;
+    background-color: pink;
+    margin: 20px;
+    justify-content: center;
 }
 
 .container {
@@ -58,7 +75,7 @@ img {
 }
 
 
-/* ********************#2 CSS *****************************************/
+/* ********************#2 CSS - Dark to Light Mode*****************************************/
 /* Dark Mode */
 .toggle {
     border-style: outset;
@@ -164,4 +181,48 @@ img {
   }
   .col {
     margin: 20px;
+  }
+
+  /* **********#3 CSS - Contact Me Info******************************** */
+#name,
+#email,
+#submit {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+
+#response {
+      padding-bottom: 30px;
+  }
+
+  /* *************#4 CSS - Event Bubbling Propagation****************** */
+  #outer-divButton {
+    background-color: pink;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  #inner-divButton {
+    height: 60%;
+    background-color: lightgray ;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    color: black;
+    font-size: 13px;
+  }
+  
+  #center-divButton {
+    background-color:white;
+    color: black;
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    font-size: 10px;
   }

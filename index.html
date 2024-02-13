@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/reset.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
-    <title>Document</title>
+    <title>My JavaScript Work</title>
 </head>
 <body>
     <header>
@@ -35,9 +35,15 @@
                 <p>LIGHT MODE</p>
             </div>
         </section>
-        <!-- #3 HTML -->
+        <!-- #4 HTML - Event Bubbling Propagation -->
         <section class="box">
-            
+            <div id="outer-divButton"> Click To Turn Me White
+                <div id="inner-divButton">Click To Turn Me AquaMarine
+                    <div>
+                        <button id="center-divButton">Click To Turn Me Pink</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="box">
             
@@ -48,8 +54,21 @@
         <section class="box">
             
         </section>
-
     </main>
+    <!-- #3 HTML - Contact Me Info-->
+    <aside>
+        <h1>Contact Me</h1>
+    </aside>
+    <section class="bigbox">
+        <form>
+            <input placeholder="name" id="name" />
+            <input placeholder="email" id="email" />
+            <button id="submit">Submit</button>
+            <div>
+              <h3 id="response"></h3>
+            </div>
+          </form>
+    </section>
     <footer>
         <header>
             <nav>
