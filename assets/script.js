@@ -123,3 +123,53 @@ imageContainer.addEventListener("click", function(event) {
     }
   }
 });
+// **********#6 JavaScript - Local Storage ***********************
+var counter = document.querySelector("#counter");
+var addButton = document.querySelector("#add");
+var subtractButton = document.querySelector("#subtract");
+
+var count = localStorage.getItem("count");
+
+counter.textContent = count;
+
+addButton.addEventListener("click", function () {
+  if (count < 24) {
+    count++;
+    counter.textContent = count;
+    localStorage.setItem("count", count);
+  }
+});
+
+subtractButton.addEventListener("click", function () {
+  if (count > 0) {
+    count--;
+    counter.textContent = count;
+    localStorage.setItem("count", count);
+  }
+});
+// **************#7 Javascript - Local Storage Objects *************
+var student = document.getElementById("student-names");
+var grade = document.getElementById("grades");
+var comment = document.getElementById("msg");
+var saveButton = document.getElementById("save");
+
+saveButton.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  var studentGrade = {
+    student: student.value,
+    grade: grade.value,
+    comment: comment.value.trim(),
+  };
+
+  localStorage.setItem("studentGrade", JSON.stringify(studentGrade));
+  renderMessage();
+});
+
+function renderMessage() {
+  var lastGrade = JSON.parse(localStorage.getItem("studentGrade"));
+  if (lastGrade !== null) {
+    document.querySelector(".message").textContent =
+      lastGrade.student + " received a/an " + lastGrade.grade;
+  }
+}
